@@ -13,7 +13,7 @@ int main() {
     char operator;
     float num1, num2;
 
-    while (1) { // Continuous loop for multiple calculations
+    while (1) { 
         get_numbers(&num1, &num2);
         operator = get_operator();
         perform_operation(num1, num2, operator);
