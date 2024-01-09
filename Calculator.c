@@ -6,8 +6,6 @@ char get_operator();
 void perform_operation(float num1, float num2, char operator);
 float add(float num1, float num2);
 float subtract(float num1, float num2);
-float multiply(float num1, float num2);
-float divide(float num1, float num2);
 
 int main() {
     char operator;
@@ -52,16 +50,7 @@ void perform_operation(float num1, float num2, char operator) {
         case '-':
             printf("%.2f - %.2f = %.2f\n", num1, num2, subtract(num1, num2));
             break;
-        case '*':
-            printf("%.2f * %.2f = %.2f\n", num1, num2, multiply(num1, num2));
-            break;
-        case '/':
-            if (num2 == 0) {
-                printf("Error: Division by zero!\n");
-            } else {
-                printf("%.2f / %.2f = %.2f\n", num1, num2, divide(num1, num2));
-            }
-            break;
+    
         default:
             printf("Invalid operator\n");
     }
@@ -76,10 +65,4 @@ float subtract(float num1, float num2) {
     return num1 - num2;
 }
 
-float multiply(float num1, float num2) {
-    return num1 * num2;
-}
 
-float divide(float num1, float num2) {
-    return num1 / num2;
-}
