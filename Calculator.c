@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Function prototypes
+
 void get_numbers(float *num1, float *num2);
 char get_operator();
 void perform_operation(float num1, float num2, char operator);
